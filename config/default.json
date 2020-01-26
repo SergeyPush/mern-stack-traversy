@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://sergey:sergey123@cluster0-a93by.azure.mongodb.net/mern-stack?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
+}

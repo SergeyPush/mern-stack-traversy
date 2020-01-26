@@ -1,0 +1,34 @@
+POST http://localhost:4000/api/auth
+Content-Type: application/json
+
+{
+    "email":"bob@mail.com",
+	"password":"123456"
+}
+
+###
+GET http://localhost:4000/api/profile/me
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUyMjJiYTMwZDlhYmI5OTQ5NTk1Yzg0In0sImlhdCI6MTU3OTQ1NTE4NiwiZXhwIjoxNTc5ODE1MTg2fQ.V03Rcf-Cs27fAnbnorFmegXT-bQ1urq76HqaZNLkoCw
+
+###
+POST http://localhost:4000/api/profile
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUyMjJiYTMwZDlhYmI5OTQ5NTk1Yzg0In0sImlhdCI6MTU3OTQ1NTE4NiwiZXhwIjoxNTc5ODE1MTg2fQ.V03Rcf-Cs27fAnbnorFmegXT-bQ1urq76HqaZNLkoCw
+
+{
+    "company":"TM",
+    "website":"http://nsdkfhfdgkdfhgkjdfhg.com",
+    "status":"Developper",
+    "skills":"HTTP, CSS, PHP, Ruby",
+    "location":"Boston, MA",
+    "bio":"I am a developper",
+    "githubusername":"brad",
+    "twitter":"twitter",
+    "facebook":"facebook",
+    "youtube":"youtube"
+}
+
+###
+GET http://localhost:4000/api/profile
+
